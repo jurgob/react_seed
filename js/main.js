@@ -7,7 +7,9 @@ var CommentList = require('./CommentList');
     {author: "Jordan Walke", text: "This is another comment"}
 ];
 
-React.render(
-        <CommentList data={data}/>,
-        document.getElementById('content')
-);
+if(typeof(window) !== 'undefined'){
+	React.render(
+	        <CommentList data={data}/>,
+	        document.getElementById('content')
+	);
+}
