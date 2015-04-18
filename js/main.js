@@ -9,7 +9,7 @@ var CommentList = require('./CommentList');
 
 if(typeof(window) !== 'undefined'){
 	React.render(
-	        <CommentList data={data}/>,
-	        document.getElementById('content')
+    <CommentList data={data}/>,
+    document.getElementById('content')
 	);
 }

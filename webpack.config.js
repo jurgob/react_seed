@@ -19,12 +19,14 @@ module.exports = {
         test: /\.js$/,
         loaders: [
           ReactStylePlugin.loader(),
-          'jsx-loader?harmony'
-        ]
+          'babel-loader'
+        ],
+        exclude: '/node_modules/'
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('css-loader')
+        loader: ExtractTextPlugin.extract('css-loader'),
+        exclude: '/node_modules/'
       }
     ]
   },

@@ -1,8 +1,12 @@
 var React = require('react');
 var Comment = require('./Comment');
 
-var CommentList = React.createClass({
-  render: function() {
+
+
+class CommentList extends React.Component
+{
+
+  render() {
     var commentNodes = this.props.data.map(function (comment) {
       return (
         <Comment author={comment.author}>
@@ -17,6 +21,7 @@ var CommentList = React.createClass({
       </div>
     );
   }
-});
 
-module.exports = CommentList;
+};
+
+export default CommentList;
