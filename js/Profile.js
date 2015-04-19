@@ -1,9 +1,9 @@
 import React from 'react';
 
-var CommentStyle = require('./CommentStyle.css');
+var ProfileStyle = require('./Profile.css');
 var StyleSheet = require('react-style');
 
-var Titles = StyleSheet.create({
+var TitlesStyle = StyleSheet.create({
     title: {
       'color' : 'pink'
     }
@@ -11,16 +11,16 @@ var Titles = StyleSheet.create({
 
 
 
-class Comment extends React.Component
+class Profile extends React.Component
 {
 
   render()
   {
     var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
     return (
-      <div  styles={[CommentStyle.comment]}  >
+      <div  styles={[ProfileStyle.comment]}  >
         <h1>Soft Banana</h1>
-        <h2  styles={[Titles.title, CommentStyle.commentAuthor]}  >
+        <h2  styles={[TitlesStyle.title, ProfileStyle.commentAuthor]}  >
           {this.props.author}
         </h2>
         <div>testa</div>
@@ -31,4 +31,4 @@ class Comment extends React.Component
 
 };
 
-export default Comment;
+export default Profile;

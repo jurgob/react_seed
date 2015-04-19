@@ -1,15 +1,11 @@
 var React = require('react');
-var CommentList = require('./CommentList');
+var ResultPage = require('./ResultPage');
 
 
- var data = [
-    {author: "Pete Hunt", text: "This is one comment"},
-    {author: "Jordan Walke", text: "This is another comment"}
-];
 
 if(typeof(window) !== 'undefined'){
 	React.render(
-    <CommentList data={data}/>,
+    <ResultPage />,
     document.getElementById('content')
 	);
 }

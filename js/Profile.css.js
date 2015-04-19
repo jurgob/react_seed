@@ -1,7 +1,7 @@
 var StyleSheet = require('react-style');
 
 
-var CommentStyle = StyleSheet.create({
+var Profile = StyleSheet.create({
     comment: {
       color: 'red',
       backgroundColor: 'white',
@@ -13,4 +13,4 @@ var CommentStyle = StyleSheet.create({
     }
 });
 
-module.exports = CommentStyle;
+module.exports = Profile;
