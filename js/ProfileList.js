@@ -1,5 +1,5 @@
-var React = require('react');
-var Profile = require('./Profile');
+import React from 'react';
+import Profile from './Profile';
 
 
 

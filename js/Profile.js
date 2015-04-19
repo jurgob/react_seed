@@ -1,7 +1,9 @@
 import React from 'react';
+import StyleSheet from 'react-style';
+import  ProfileStyle from './Profile.css';
 
-var ProfileStyle = require('./Profile.css');
-var StyleSheet = require('react-style');
+
+
 
 var TitlesStyle = StyleSheet.create({
     title: {

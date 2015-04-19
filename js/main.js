@@ -1,5 +1,5 @@
-var React = require('react');
-var ResultPage = require('./ResultPage');
+import  React 			from 'react';
+import  ResultPage 	from './ResultPage';
 
 
 

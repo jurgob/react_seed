@@ -1,5 +1,5 @@
-var React = require('react');
-var ProfileList = require('./ProfileList');
+import React from 'react';
+import ProfileList from './ProfileList';
 
 
 var data = [

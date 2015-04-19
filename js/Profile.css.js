@@ -1,4 +1,4 @@
-var StyleSheet = require('react-style');
+import StyleSheet from 'react-style';
 
 
 var Profile = StyleSheet.create({
