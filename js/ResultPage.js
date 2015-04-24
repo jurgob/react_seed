@@ -17,7 +17,6 @@ class ResultPage extends React.Component
         this.state = {results: AppStore.getResults()};
   }
 
-
   render()
   {
     console.log('render');

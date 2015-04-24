@@ -17,7 +17,8 @@ class ProfileList extends React.Component
 
     return (
       <div className="profileList">
-        {profileNodes}
+        <h1>Profile list:</h1>
+        <div>{profileNodes}</div>
       </div>
     );
   }

@@ -7,11 +7,11 @@ var webpack = require('webpack');
 
 module.exports = {
 	devtool: 'sourcemap',
-  entry: ['./js/main.js'],
+  entry: [ './js/main.js'],
   output: {
     filename: 'bundle.js',
     path: __dirname + '/assets',
-    publicPath: __dirname + '/'
+    publicPath: '/assets/'
   },
   module: {
     loaders: [
@@ -25,13 +25,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('css-loader'),
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader"),
         exclude: '/node_modules/'
       }
     ]
   },
   plugins: [
-    new ReactStylePlugin('bundle.css'),
+    new ExtractTextPlugin("bundle.css"),
     new webpack.DefinePlugin({
       'process.env': {
         // To enable production mode:
