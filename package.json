@@ -24,6 +24,7 @@
     "webpack-dev-server": "^1.8.0"
   },
   "dependencies": {
+    "flux": "^2.0.1",
     "react": "^0.13.1",
     "react-style": "^0.5.3"
   }
