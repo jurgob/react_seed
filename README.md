@@ -5,7 +5,7 @@ JobJourney web client
 
 * checkout prj
 * cd jobjourney_webclient
-* npm init
+* npm install
 
 ### How to run ###
 
