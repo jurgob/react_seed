@@ -3,7 +3,7 @@
 JobJourney web client
 ### Install it ###
 
-* checkout prj
+* git clone https://USER@bitbucket.org/jurgo/jobjourney_webclient.git  #change USER with your user
 * cd jobjourney_webclient
 * npm install
 
