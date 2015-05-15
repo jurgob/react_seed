@@ -1,5 +1,5 @@
 import  React 			from 'react';
-import  ResultPage 	from './ResultPage';
+import  ResultPage 	from './components/ResultPage';
 
 
 
