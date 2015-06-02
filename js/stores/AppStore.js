@@ -1,14 +1,16 @@
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
+import AppDispatcher from '../dispatcher/AppDispatcher';
 
-var AppConstants = require('../constants/AppConstants');
-var assign = require('object-assign');
+import EventEmitter from 'events';
+// var EventEmitter = require('events').EventEmitter;
+
+import AppConstants from '../constants/AppConstants';
+import assign from 'object-assign';
 
 
-var data = [
-    {author: "Pete Hunt", text: "This is one comment"},
-    {author: "Jordan Walke", text: "This is another comment"}
-];
+var data = [];
+
+var CHANGE_EVENT = 'change';
+
 
 
 
@@ -41,8 +43,9 @@ var AppStore = assign({},EventEmitter.prototype, {
 
 AppDispatcher.register(function(action) {
 	switch(action.actionType) {
-    case AppConstants.GET_RESULTS:
-
+    case AppConstants.RECEIVE_RESULTS:
+      console.log('STORE trigger get results');
+      data = action.results
       AppStore.emitChange();
 
       break;

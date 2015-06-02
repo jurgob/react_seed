@@ -1,14 +1,17 @@
-var AppDispatcher = require('./AppDispatcher');
-var AppConstants = require('./AppConstants');
+
+import  AppDispatcher 	from '../dispatcher/AppDispatcher';
+import  AppConstants 	from '../constants/AppConstants';
+
 
 var AppActions = {
 
   /**
    * @param  {array} results
    */
-  getResults: function(results) {
+  receiveResults: function(results) {
+
     AppDispatcher.dispatch({
-      actionType: TodoConstants.GET_RESULTS,
+      actionType: AppConstants.RECEIVE_RESULTS,
       results: results
     });
   }
