@@ -24,7 +24,6 @@ class Project extends React.Component
       </div>
     );
   }
-
 };
 
 export default Project;
