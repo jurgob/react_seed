@@ -47,7 +47,7 @@ AppDispatcher.register(function(action) {
       AppStore.emitChange();
       break;
 
-      
+
 
    	default:
       // no op
