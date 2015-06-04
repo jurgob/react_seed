@@ -1,9 +1,8 @@
-var keyMirror = require('keymirror');
+var ActionTypes = [
+  "GET_RESULTS",
+  "RECEIVE_RESULTS"
+];
 
-
-var ActionTypes = keyMirror({
-  GET_RESULTS: null,
-  RECEIVE_RESULTS :null
-});
+var ActionTypes = ActionTypes.reduce(function(obj, str){obj[str] = str; return obj;}, {});
 
 module.exports = ActionTypes;
