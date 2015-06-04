@@ -1,9 +1,9 @@
 import  React 			from 'react';
 import  ResultPage 	from './components/ResultPage';
-import  GitHubFb 	from './utils/GitHubFb';
+import AppActions 	from './actions/AppActions';
 
 
-GitHubFb.getAllRepo();
+AppActions.getAllResults();
 
 if(typeof(window) !== 'undefined'){
 	React.render(
@@ -11,4 +11,3 @@ if(typeof(window) !== 'undefined'){
     document.getElementById('content')
 	);
 }
-

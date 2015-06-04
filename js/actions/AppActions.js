@@ -1,10 +1,10 @@
 
 import  AppDispatcher 	from '../dispatcher/AppDispatcher';
 import  AppConstants 	from '../constants/AppConstants';
+import  GitHubFb 	from '../utils/GitHubFb';
 
 
 var AppActions = {
-
   /**
    * @param  {array} results
    */
@@ -13,6 +13,21 @@ var AppActions = {
       actionType: AppConstants.RECEIVE_RESULTS,
       results: results
     });
+  },
+
+  getAllResults: () => {
+    GitHubFb.getAllRepo()
+      .then((json) =>{
+        AppActions.receiveResults(json);
+      });
+
+
+  //
+  //
+  //   // AppDispatcher.dispatch({
+  //   //   actionType: AppConstants.GET_ALL_RESULTS,
+  //   //   results: results
+  //   // });
   }
 
   // getAllResults :

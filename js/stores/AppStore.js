@@ -45,8 +45,9 @@ AppDispatcher.register(function(action) {
       console.log('STORE trigger get results');
       data = action.results
       AppStore.emitChange();
-
       break;
+
+      
 
    	default:
       // no op

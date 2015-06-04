@@ -13,7 +13,6 @@ class Project extends React.Component
 
   render()
   {
-    console.log('Project this.props', this.props)
     var project = this.props.project;
     return (
       <div  styles={[ProfileStyle.comment]}  >

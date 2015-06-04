@@ -1,6 +1,3 @@
-
-import  AppActions 	from '../actions/AppActions';
-
 var GitHubFb = (function(){
 	var scope = {};
 
@@ -10,7 +7,7 @@ var GitHubFb = (function(){
 		    return response.json()
 		  }).then(function(json) {
 		    console.log('-- parsed json', json);
-		    AppActions.receiveResults(json);
+		    return json
 		    // return json;
 		  })
 
@@ -25,8 +22,3 @@ var GitHubFb = (function(){
 })();
 
 export default GitHubFb;
-
-
-
-
-
