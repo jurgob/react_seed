@@ -3,8 +3,11 @@ import Project from './Project';
 
 
 
-var ProjectList = React.createClass({
-  render: function() {
+class ProjectList extends React.Component
+{
+
+  render()
+  {
     var profileNodes = this.props.projects.map(
       (project, idx) =>{
         console.log('project ',project);
@@ -23,7 +26,7 @@ var ProjectList = React.createClass({
     );
   }
 
-});
+}
 
 
 
