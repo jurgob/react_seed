@@ -2,18 +2,12 @@ import React from 'react';
 import ProjectList from './ProjectList';
 import AppStore from '../stores/AppStore'
 
-
-// var data = [
-//     {author: "Pete Hunt", text: "This is one comment"},
-//     {author: "Jordan Walke", text: "This is another comment"}
-// ];
-
 var getStateFromStores = function() {
     console.log('getStateFromStores')
     return {
       'results': AppStore.getResults()
     };
-  }
+};
 
 
 class ResultPage extends React.Component

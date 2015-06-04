@@ -1,7 +1,5 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
-
 import EventEmitter from 'events';
-// var EventEmitter = require('events').EventEmitter;
 
 import AppConstants from '../constants/AppConstants';
 import assign from 'object-assign';

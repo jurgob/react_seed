@@ -8,12 +8,16 @@ var AppActions = {
   /**
    * @param  {array} results
    */
-  receiveResults: function(results) {
+  receiveResults: (results) => {
     AppDispatcher.dispatch({
       actionType: AppConstants.RECEIVE_RESULTS,
       results: results
     });
   }
+
+  // getAllResults :
+  // GET_ALL_RESULTS
+
 
 
 

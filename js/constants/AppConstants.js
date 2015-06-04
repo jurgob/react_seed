@@ -1,5 +1,5 @@
 var ActionTypes = [
-  "GET_RESULTS",
+  "GET_ALL_RESULTS",
   "RECEIVE_RESULTS"
 ];
 
