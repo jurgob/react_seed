@@ -1,7 +1,7 @@
 import StyleSheet from 'react-style';
 
 
-var Profile = StyleSheet.create({
+var Project = StyleSheet.create({
     comment: {
       color: 'red',
       backgroundColor: 'white',
@@ -13,4 +13,4 @@ var Profile = StyleSheet.create({
     }
 });
 
-module.exports = Profile;
+module.exports = Project;

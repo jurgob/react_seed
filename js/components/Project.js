@@ -1,6 +1,6 @@
 import React from 'react';
 import StyleSheet from 'react-style';
-import  ProfileStyle from './css/Profile.css';
+import  ProjectStyle from './css/Project.css';
 
 
 class Project extends React.Component
@@ -15,9 +15,9 @@ class Project extends React.Component
   {
     var project = this.props.project;
     return (
-      <div  styles={[ProfileStyle.comment]}  >
+      <div  styles={[ProjectStyle.comment]}  >
         <h1>{project.name}</h1>
-        <h2  styles={[ProfileStyle.commentAuthor]}  >
+        <h2  styles={[ProjectStyle.commentAuthor]}  >
              {project.description}
         </h2>
       </div>
