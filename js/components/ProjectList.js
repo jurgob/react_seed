@@ -10,7 +10,6 @@ class ProjectList extends React.Component
   {
     var profileNodes = this.props.projects.map(
       (project, idx) =>{
-        console.log('project ',project);
         var prj = project;
         return (
           <Project key={project.id}   project={project} />
